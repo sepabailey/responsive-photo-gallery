@@ -1,0 +1,67 @@
+/*Thanks to Chris Wilson for some styling ideas*/
+
+@import url("https://fonts.googleapis.com/css?family=Cantarell&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.title {
+  color: #f70b19;
+  font-family: "Cantarell", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  padding-right: 15px;
+  letter-spacing: -5px;
+  text-align: justify;
+  line-height: 80px;
+}
+
+p {
+  padding-top: 50px;
+  line-height: 42px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.games {
+  flex-wrap: wrap;
+  border-radius: 35px;
+  opacity: 0.5;
+  height: 203px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+img.games:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+  }
+
+  div.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img.games {
+    height: 203px;
+    width: 300px;
+  }
+}
